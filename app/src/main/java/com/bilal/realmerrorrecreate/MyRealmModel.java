@@ -43,6 +43,7 @@ public class MyRealmModel extends RealmObject {
         Realm realm = Realm.getDefaultInstance();
         RealmResults<MyRealmModel> realmResults = realm.where(MyRealmModel.class).findAll();
         for (MyRealmModel i : realmResults) {
+            // Correct values in these logs
             Log.d(TAG, "id: " + i.id);
             Log.d(TAG, "minAge: " + i.minAge);
             Log.d(TAG, "maxAge: " + i.maxAge);

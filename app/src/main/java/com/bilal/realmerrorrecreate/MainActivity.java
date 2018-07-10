@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 myRealmModels = MyRealmModel.getModels();
                 for (MyRealmModel i : myRealmModels) {
+                    // Incorrect values in these logs
                     Log.d(TAG, "id: " + i.id);
                     Log.d(TAG, "minAge: " + i.minAge);
                     Log.d(TAG, "maxAge: " + i.maxAge);
